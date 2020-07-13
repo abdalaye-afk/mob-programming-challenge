@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const userModel=require("../models/user.js")
 
 const b = [
   "assets/img/fabian-grohs-oZ61KFUQsus-unsplash.jpg",
@@ -20,14 +21,30 @@ router.get("/", (req,res)=>{
 
 
 router.get("/all-simploniens", (req,res)=>{
-  res.render("allUsers",{a})
+  userModel.find()
+  .then(dbres => {
+    res.render("allUsers",{a :dbres} )
+  })
+  
+ 
 });
+
+
 
 
 router.get("/add-simploniens", (req,res)=>{
   res.render("formUser")
 });
 
+
+router.post("/ajout", (req,res) => {
+
+  userModel.create(req.body)
+  .then(dbres => {
+    res.render("home");
+  })
+.catch(dbrerror=>console.error(dbrerror));
+})
 
 router.get("/api/simploniens", (req,res)=>{
   res.json("users")
