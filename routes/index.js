@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const b = ["./public/assets/img/fabian-grohs-oZ61KFUQsus-unsplash.jpg",
-    "./public/assets/img/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg",
-    "./public/assets/img/steve-halama-Yhc7YGZlz3g-unsplash.jpg"
+const b = [
+  "assets/img/fabian-grohs-oZ61KFUQsus-unsplash.jpg",
+  "assets/img/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg",
+  "assets/img/steve-halama-Yhc7YGZlz3g-unsplash.jpg"
 ];
 
 
