@@ -1,0 +1,26 @@
+{
+  "name": "mob-programming3-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon ./bin/www -e .hbs,.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdalaye-afk/mob-programming-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdalaye-afk/mob-programming-challenge/issues"
+  },
+  "homepage": "https://github.com/abdalaye-afk/mob-programming-challenge#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.9.23"
+  }
+}
