@@ -13,3 +13,4 @@ mongoose.connection.on("connected", () => {
 mongoose.connection.on("error", () => {
     console.log("Error: Database failed lol");
 });
+
