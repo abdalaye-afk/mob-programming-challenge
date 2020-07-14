@@ -1,0 +1,12 @@
+<h1>Formulaire de modification {{user.name}}</h1>
+
+<form method="POST" action="/confirmeEdit/{{user.id}}">
+    <input type="text"  name="name" value="{{user.name}}">
+    <input type="email"  name="email" value="{{user.email}}">
+    <input type="text"  name="langage" value="{{user.langage}}">
+    <input type="submit" value="envoyer">
+
+
+
+
+</form>
