@@ -1,0 +1,9 @@
+#image3
+{
+    height: 640px;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
